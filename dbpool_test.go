@@ -1,9 +1,10 @@
 package gopostgres_test
 
 import (
-	"bitbucket.org/mybudget-dev/go-postgres"
 	"context"
 	"testing"
+
+	gopostgres "github.com/HADLakmal/go-postgres"
 )
 
 func TestDBPool_BeginTransaction(t *testing.T) {

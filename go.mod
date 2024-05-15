@@ -1,4 +1,4 @@
-module bitbucket.org/mybudget-dev/go-postgres
+module github.com/HADLakmal/go-postgres
 
 go 1.14
 

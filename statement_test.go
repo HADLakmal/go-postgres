@@ -1,9 +1,10 @@
 package gopostgres_test
 
 import (
-	"bitbucket.org/mybudget-dev/go-postgres"
 	"context"
 	"testing"
+
+	gopostgres "github.com/HADLakmal/go-postgres"
 )
 
 func TestStatement_ExecContext(t *testing.T) {
@@ -60,7 +61,7 @@ func TestStatement_QueryContext(t *testing.T) {
 		wantErr bool
 	}{
 		"norma-query": {
-			query:   "SELECT|people|name|",
+			query: "SELECT|people|name|",
 		},
 		"failed-query": {
 			query:   "SELECT|people|name=?|",
